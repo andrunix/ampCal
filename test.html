@@ -1,0 +1,130 @@
+<html>
+
+<head>
+<style>
+.solid {
+  border: thin solid #00cc00;
+}
+.dotted {
+  border: thin dotted #990000;
+  width: 60px;
+}
+
+.acFuture {
+  width: 14%;
+  height: 70;
+  background-color: #ccf;
+  vertical-align: top;
+}
+</style>
+
+<script type="text/javascript">
+function init() {
+  document.getElementById('b13').innerHTML = "this is 13";
+
+  // set the title
+  document.getElementById('title').innerHTML = "This is the title";    
+}
+
+  function foo(el) {
+    document.getElementById(el).className="solid";
+  }
+  function bar(el) {
+    document.getElementById(el).className="dotted";
+  }
+  function future(el) {
+    document.getElementById(el).className="acFuture";
+  }
+</script>
+
+
+</head>
+
+<body onload="init()">
+
+<table width="100%">
+  <tr>
+  <td id="title">&nbsp;</td>
+  <tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td id="b11" class="acFuture" onMouseOver="foo(this.id)" onMouseOut="future(this.id)">box 1</td>
+    <td id="b12" class="acFuture">box 2</td>
+    <td id="b13" class="acFuture">box 3</td>
+    <td id="b14" class="acFuture">box 4</td>
+    <td id="b15" class="acFuture">box 5</td>
+    <td id="b16" class="acFuture">box 6</td>
+    <td id="b17" class="acFuture">box 7</td>
+  </tr>
+  <tr>
+    <td id="b21" class="acFuture" onMouseOver="foo(this.id)" onMouseOut="future(this.id)">box 1</td>
+    <td id="b22" class="acFuture">box 2</td>
+    <td id="b23" class="acFuture">box 3</td>
+    <td id="b24" class="acFuture">box 4</td>
+    <td id="b25" class="acFuture">box 5</td>
+    <td id="b26" class="acFuture">box 6</td>
+    <td id="b27" class="acFuture">box 7</td>
+  </tr>
+
+  <tr>
+    <td id="b31" class="acFuture" onMouseOver="foo(this.id)" onMouseOut="future(this.id)">box 1</td>
+    <td id="b32" class="acFuture">box 2</td>
+    <td id="b33" class="acFuture">box 3</td>
+    <td id="b34" class="acFuture">box 4</td>
+    <td id="b35" class="acFuture">box 5</td>
+    <td id="b36" class="acFuture">box 6</td>
+    <td id="b37" class="acFuture">box 7</td>
+  </tr>
+  <tr>
+    <td id="b41" class="acFuture" onMouseOver="foo(this.id)" onMouseOut="future(this.id)">box 1</td>
+    <td id="b42" class="acFuture">box 2</td>
+    <td id="b43" class="acFuture">box 3</td>
+    <td id="b44" class="acFuture">box 4</td>
+    <td id="b45" class="acFuture">box 5</td>
+    <td id="b46" class="acFuture">box 6</td>
+    <td id="b47" class="acFuture">box 7</td>
+  </tr>
+  <tr>
+    <td id="b51" class="acFuture" onMouseOver="foo(this.id)" onMouseOut="future(this.id)">box 1</td>
+    <td id="b52" class="acFuture">box 2</td>
+    <td id="b53" class="acFuture">box 3</td>
+    <td id="b54" class="acFuture">box 4</td>
+    <td id="b55" class="acFuture">box 5</td>
+    <td id="b56" class="acFuture">box 6</td>
+    <td id="b57" class="acFuture">box 7</td>
+  </tr>
+  <tr>
+    <td id="b61" class="acFuture" onMouseOver="foo(this.id)" onMouseOut="future(this.id)">box 1</td>
+    <td id="b62" class="acFuture">box 2</td>
+    <td id="b63" class="acFuture">box 3</td>
+    <td id="b64" class="acFuture">box 4</td>
+    <td id="b65" class="acFuture">box 5</td>
+    <td id="b66" class="acFuture">box 6</td>
+    <td id="b67" class="acFuture">box 7</td>
+  </tr>
+</table>
+
+<table cellpadding="10" cellspacing="10" border="0">
+  <tr>
+    <td>Plain</td>
+    <td id="abox" class="dotted" 
+      onMouseOver="foo(this.id);" 
+      onMouseOut="bar(this.id);">Bordered</td>
+    <td style="border: thin dotted #990000">Dotted</td>
+  </tr>
+</table>
+
+<div id="row1" class="solid">Row 1
+<div id="1" class="dotted">This is div1</div>
+<div id="2" class="dotted">This is div2</div>
+<div id="3" class="dotted">div3</div>
+<div id="4" class="dotted">div4</div>
+<div id="5" class="dotted">div5</div>
+<div id="6" class="dotted">div6</div>
+<div id="7" class="dotted">div7</div>
+</div>
+
+</body>
+</html>
